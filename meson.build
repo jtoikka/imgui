@@ -8,3 +8,7 @@ imgui = library(
   sources,
   include_directories: include_dirs
 )
+
+project_dep = declare_dependency(
+  link_with : imgui,
+  include_directories : include_dirs)
